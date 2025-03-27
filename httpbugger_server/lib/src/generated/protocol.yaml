@@ -1,0 +1,7 @@
+example:
+  - hello:
+httpWatcher:
+  - postLog:
+  - logUpdates:
+  - markUserActive:
+  - markUserInactive:

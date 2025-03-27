@@ -1,0 +1,26 @@
+# Yaml-files in the `models` directory specify which serializable objects
+# should be generated. When you add or modify a file, you will need to run
+# `serverpod generate` to make the generated classes available in the server and
+# client.
+#
+# Please consult the documentation for more information on what you can add to
+# your yaml-files.
+
+
+# Name of the class to generate.
+class: HttpLog
+
+# No table definition since we're not storing in database
+
+# Define all the fields needed for HTTP watching
+fields:
+  timestamp: DateTime
+  userId: String
+  endpointUrl: String
+  requestMethod: String
+  statusCode: int
+  responseBody: String
+  requestHeaders: String
+  responseHeaders: String
+  requestParams: String
+  responseTimeMs: int
